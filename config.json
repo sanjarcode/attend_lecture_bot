@@ -1,0 +1,48 @@
+{
+  "username":"Fill google user name",
+  "password":"Fill google password",
+  "timetable":{
+    "MON": [
+      { "start_time": "10:00", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "11:10", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "12:40", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "13:50", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "15:00", "duration": "120", "Subject name":"","Meet link": "" }
+    ],
+    "TUE": [
+      { "start_time": "10:00", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "11:10", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "12:40", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "13:50", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "15:00", "duration": "120", "Subject name":"","Meet link": "" }
+    ],
+    "WED": [
+      { "start_time": "10:00", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "11:10", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "12:40", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "13:50", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "15:00", "duration": "120", "Subject name":"","Meet link": "" }
+    ],
+    "THU": [
+      { "start_time": "10:00", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "11:10", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "12:40", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "13:50", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "15:00", "duration": "120", "Subject name":"","Meet link": "" }
+    ],
+    "FRI": [
+      { "start_time": "10:00", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "11:10", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "12:40", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "13:50", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "15:00", "duration": "120", "Subject name":"","Meet link": "" }
+     ],
+    "SAT": [
+      { "start_time": "10:00", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "11:10", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "12:40", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "13:50", "duration": "60", "Subject name":"","Meet link": "" },
+      { "start_time": "15:00", "duration": "120", "Subject name":"","Meet link": "" }
+    ]
+  }
+}
