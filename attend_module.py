@@ -58,30 +58,32 @@ def clean_timetable():
 
 
 def set_timetable():
+    days_of_the_week = {
+        'SUN': 0,
+        'MON': 1,
+        'TUE': 2,
+        'WED': 3,
+        'THU': 4,
+        'FRI': 5,
+        'SAT': 6
+    }
     with open('./config.json', 'r') as config:
         config = json.load(config)
         username = config['username']
         password = config['password']
-        timetable = config['timetable']
-        days_of_the_week = {
-            'SUN': 0,
-            'MON': 1,
-            'TUE': 2,
-            'WED': 3,
-            'THU': 4,
-            'FRI': 5,
-            'SAT': 6
-        }
-        for day in timetable:  # day is 'MON', 'TUE' etc - a string
-            for lecture in timetable[
-                    day]:  # lecture is a dict { "start_time": "10:00", "duration": "60", "Subject link": "" },
-                    if lecture['duration']!='0': # classes which are really happening
-                        set_cron_job(
-                            (lecture['start_time'], days_of_the_week[day]),
-                            command=
-                            "export DISPLAY=:0; {0}/.attend_lecture/attend_lecture.py {1} {2} {3} {4} >> {0}/attend_log.txt"
-                            .format(os.path.expanduser('~'), username, password,
-                                    lecture['Meet link'], lecture['duration']))
+        for day in config['timetable']:
+            week_day, lectures = day.popitem() # day is a singular dict
+            for lecture in lectures:  # lecture dict
+                [start_time, duration, subject_name, meet_link] = lecture.values()
+                if duration != '0':  # classes which are really happening
+                    print(duration)
+                    set_cron_job(
+                        (start_time, days_of_the_week[week_day]),
+                        command=
+                        "export DISPLAY=:0; {0}/.attend_lecture/attend_lecture.py {1} {2} {3} {4} {5} >> {0}/attend_log.txt"
+                        .format(os.path.expanduser('~'), username, password,
+                                meet_link, duration, subject_name))
+
 
 
 def uninstall_process():
@@ -96,7 +98,7 @@ def uninstall_process():
     else:
         print('Nothing to remove')
 
-def attend_meet(username, password, meet_url, lecture_time):
+def attend_meet(username, password, meet_url, duration):
     if '@' not in username or password == '' or meet_url == '': # just future proofing
         return False
     # open the browser - allow for camera and microphone ----------#
@@ -138,19 +140,15 @@ def attend_meet(username, password, meet_url, lecture_time):
     browser.find_element_by_css_selector(
         '.uArJ5e.UQuaGc.Y5sE8d.uyXBBb.xKiqt').click()  # click join button
 
-    sleep(int(lecture_time) * 60)  # lec time is in minutes
+    sleep(int(duration) * 60)  # lec time is in minutes
     browser.quit()  # close the browser - automatically ended the call
     return True
 
 
-def log_attendance(value, cause='All OK'):
+def log_attendance(successful, subject_name, cause='All OK'):
     destination = os.path.expanduser(
         "~") + '/.attend_lecture/'  # the destination
     os.chdir(destination)
-    if value:
-        value = 'Attended'
-    else:
-        value = 'Not Attended'
     with open('attendance_log.txt', 'a') as log_file:
         timestamp = datetime.datetime.now().strftime('"%d-%b-%Y %H:%M:%S"')
-        log_file.write('{} | {} | {}\n'.format(value, timestamp, cause))
+        log_file.write('{} | {} | {} | {}\n'.format({True:'Attended', False:'Not Attended'}[successful], timestamp, cause, subject_name))
