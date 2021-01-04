@@ -6,8 +6,8 @@
       { "start_time": "10:00", "duration": "60", "Subject name":"","Meet link": "" },
       { "start_time": "11:10", "duration": "60", "Subject name":"","Meet link": "" },
       { "start_time": "12:40", "duration": "60", "Subject name":"","Meet link": "" },
-      { "start_time": "13:50", "duration": "60", "Subject name":"","Meet link": "" },
-      { "start_time": "15:00", "duration": "120", "Subject name":"","Meet link": "" }
+      { "start_time": "13:50", "duration": "0", "Subject name":"","Meet link": "" },
+      { "start_time": "15:00", "duration": "0", "Subject name":"","Meet link": "" }
     ],
     "TUE": [
       { "start_time": "10:00", "duration": "60", "Subject name":"","Meet link": "" },
