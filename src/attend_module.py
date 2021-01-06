@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from datetime import time
 from time import sleep
-import sys, os, datetime, json, subprocess, shutil, stat
+import os, datetime, json, subprocess, shutil, stat
 
 def install_files():
     # os.chdir(os.path.dirname(__file__))  # at the working directory

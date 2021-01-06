@@ -1,0 +1,56 @@
+{
+  "username": "Fill in college google username",
+  "password": "Fill in password",
+  "meet_links": {
+    "A": "https://meet.google.com/lookup/this_is_a_demo",
+    "B": "https://meet.google.com/lookup/this_is_a_demo",
+    "C": "https://meet.google.com/lookup/this_is_a_demo",
+    "_comment": "Not assigned (blank '') is OK",
+    "D": ""
+  },
+  "timetable": {
+    "MON": [
+      { "start_time": "10:00", "duration": "60", "subject_name": "" },
+      { "start_time": "11:10", "duration": "60", "subject_name": "" },
+      { "start_time": "12:40", "duration": "60", "subject_name": "" },
+      { "start_time": "13:50", "duration": "0", "subject_name": "" },
+      { "start_time": "15:00", "duration": "0", "subject_name": "" }
+    ],
+    "_comment": "Duration to 0 or blank(ASCII '') means slot is empty",
+    "TUE": [
+      { "start_time": "10:00", "duration": "60", "subject_name": "" },
+      { "start_time": "11:10", "duration": "60", "subject_name": "" },
+      { "start_time": "12:40", "duration": "60", "subject_name": "" },
+      { "start_time": "13:50", "duration": "60", "subject_name": "" },
+      { "start_time": "15:00", "duration": "120", "subject_name": "" }
+    ],
+    "WED": [
+      { "start_time": "10:00", "duration": "60", "subject_name": "" },
+      { "start_time": "11:10", "duration": "60", "subject_name": "" },
+      { "start_time": "12:40", "duration": "60", "subject_name": "" },
+      { "start_time": "13:50", "duration": "60", "subject_name": "" },
+      { "start_time": "15:00", "duration": "120", "subject_name": "" }
+    ],
+    "THU": [
+      { "start_time": "10:00", "duration": "60", "subject_name": "" },
+      { "start_time": "11:10", "duration": "60", "subject_name": "" },
+      { "start_time": "12:40", "duration": "60", "subject_name": "" },
+      { "start_time": "13:50", "duration": "60", "subject_name": "" },
+      { "start_time": "15:00", "duration": "120", "subject_name": "" }
+    ],
+    "FRI": [
+      { "start_time": "10:00", "duration": "60", "subject_name": "" },
+      { "start_time": "11:10", "duration": "60", "subject_name": "" },
+      { "start_time": "12:40", "duration": "60", "subject_name": "" },
+      { "start_time": "13:50", "duration": "60", "subject_name": "" },
+      { "start_time": "15:00", "duration": "120", "subject_name": "" }
+    ],
+    "SAT": [
+      { "start_time": "10:00", "duration": "60", "subject_name": "" },
+      { "start_time": "11:10", "duration": "60", "subject_name": "" },
+      { "start_time": "12:40", "duration": "60", "subject_name": "" },
+      { "start_time": "13:50", "duration": "60", "subject_name": "" },
+      { "start_time": "15:00", "duration": "120", "subject_name": "" }
+    ]
+  }
+}

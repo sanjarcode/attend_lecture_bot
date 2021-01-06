@@ -4,7 +4,7 @@ import os
 os.system('pip3 uninstall crontab')  #important
 os.system('pip3 install -r requirements.txt')  # installs all dependencies
 
-from attend_module import clean_timetable, set_timetable, install_files
+from .attend_module import clean_timetable, set_timetable, install_files
 
 if __name__ == "__main__":
     clean_timetable()  # cleans attend lecture cron jobs
