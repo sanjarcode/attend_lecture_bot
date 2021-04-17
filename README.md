@@ -1,5 +1,6 @@
 ## What
-This script is a prank project. It uses cron daemon to emulate your presence in online classes. 
+This script started out as a prank project. But it works.
+It uses the `cron` daemon to emulate your presence in online classes, via the browser.
 
 ## Why
 Lets you have time for studying things that really matter.
@@ -34,5 +35,6 @@ Your attendance log is retained. It contains status, error for all lectures.
 3. Keep your PC(bot) on at all times
 4. If timetable changes, change the timetable, run `install.py` again.
 5. Not tested on Windows.
+6. Your password and email are kept as plain-text.
 
 USE AT YOUR OWN RISK - Your teacher can be your best friend. Time is precious!
