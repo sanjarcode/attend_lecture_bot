@@ -17,10 +17,10 @@ Lets you have time for studying things that really matter.
 **Note** Most requirements are present by default, on Linux and MacOS.
 
 ## Installation
-1. Download the zip.
-2. Set the fields in config.json
-3. Run the _install.py_ script
-4. Check if properly installed using crontab -l
+1. Download and extract the zip.
+2. Set the fields in `config.json` - email, password, timetable, class links.
+3. Run `install.py`
+4. Check if properly installed using crontab -l: you'll see entries with your email, password.
 
 Installation location: `~/.attend_lecture/`
 
