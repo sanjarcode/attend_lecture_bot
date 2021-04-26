@@ -10,7 +10,9 @@ Lets you have time for studying things that really matter.
 - Closes the browser, after a specified time(for example 60 minutes).
 - Logs in the status, errors that occurred in a file for future reference.
 
-### Requirements
+## Usage
+
+#### Requirements
 1. OS - Linux/Mac
 2. `cron` [install here](https://stackoverflow.com/questions/1802337/how-to-install-cron)
 3. `python3`
@@ -21,7 +23,7 @@ Lets you have time for studying things that really matter.
 
 **Note** Most requirements are present by default, on Linux and MacOS.
 
-## Installation
+#### Installation
 1. Download and extract the zip.
 2. Set the fields in `config.json` - email, password, timetable, class links.
 3. Run `install.py`
@@ -29,7 +31,7 @@ Lets you have time for studying things that really matter.
 
 Installation location: `~/.attend_lecture/`
 
-## Uninstallation
+#### Removal
 1. Run `uninstall.py`
 
 Your attendance log is retained. It contains status, error for all lectures.
