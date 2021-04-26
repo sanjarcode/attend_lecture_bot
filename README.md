@@ -29,7 +29,7 @@ Installation location: `~/.attend_lecture/`
 
 Your attendance log is retained. It contains status, error for all lectures.
 
-## Notes
+## Note
 1. Installing the app multiple times won't clog the crontab, don't worry about it.
 2. Your existing cron jobs will not be affected, even if you add new ones after installation
 3. Keep your PC(bot) on at all times
