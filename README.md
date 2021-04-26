@@ -5,7 +5,10 @@ This script started out as a prank project. But it works.
 Lets you have time for studying things that really matter.
 
 ## How
-It uses the `cron` daemon to emulate your presence in online classes, via the browser.
+- It uses the `cron` daemon to fire a script, as per your timetable.
+- Open Chrome, logs in using given credentials.
+- Closes the browser, after a specified time(for example 60 minutes).
+- Logs in the status, errors that occurred, for future reference.
 
 ### Requirements
 1. OS - Linux/Mac
