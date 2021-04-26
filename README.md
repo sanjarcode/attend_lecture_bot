@@ -8,7 +8,7 @@ Lets you have time for studying things that really matter.
 - It uses the `cron` daemon to fire a script, as per your timetable.
 - Open Chrome, logs in using given credentials.
 - Closes the browser, after a specified time(for example 60 minutes).
-- Logs in the status, errors that occurred, for future reference.
+- Logs in the status, errors that occurred in a file for future reference.
 
 ### Requirements
 1. OS - Linux/Mac
