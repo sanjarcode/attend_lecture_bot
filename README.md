@@ -1,8 +1,9 @@
 ## What
-This script started out as a prank project. But it works.
+A bot(bunch of scripts) that attends lectures for you.
 
 ## Why
 Lets you have time for studying things that really matter.
+This script started out as a prank project.
 
 ## How
 - It uses the `cron` daemon to fire a script, as per your timetable.
