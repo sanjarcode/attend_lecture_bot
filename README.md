@@ -1,9 +1,11 @@
 ## What
 This script started out as a prank project. But it works.
-It uses the `cron` daemon to emulate your presence in online classes, via the browser.
 
 ## Why
 Lets you have time for studying things that really matter.
+
+## How
+It uses the `cron` daemon to emulate your presence in online classes, via the browser.
 
 ### Requirements
 1. OS - Linux/Mac
