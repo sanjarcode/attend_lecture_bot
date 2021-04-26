@@ -42,6 +42,6 @@ Your attendance log is retained. It contains status, error for all lectures.
 3. Keep your PC(bot) on at all times
 4. If timetable changes, change the timetable, run `install.py` again.
 5. Not tested on Windows.
-6. Your email and password kept as plain-text, i.e. unencrypted.
+6. Your email and password kept are as plain-text, i.e. unencrypted.
 
 USE AT YOUR OWN RISK - Your teacher can be your best friend. Time is precious!
