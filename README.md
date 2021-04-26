@@ -1,5 +1,5 @@
 ## What
-A bot(bunch of scripts) that attends lectures on Google Meet for you.
+A bot(bunch of scripts) that attends lectures on Google Meet.
 
 ## Why
 Lets you have time for studying things that really matter.
