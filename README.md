@@ -1,13 +1,13 @@
 ## What
-A bot(bunch of scripts) that attends lectures on Google Meet.
+A bot (😂️ bunch of scripts) that attends lectures on Google Meet.
 
 ## Why
 Lets you have time for studying things that really matter.
-This script started out as a prank project.
+This as a prank project🤗️.
 
 ## How
 - It uses the `cron` daemon to fire a script, as per your timetable.
-- Open Chrome, logs in using given credentials.
+- Opens Chrome, logs in using given credentials.
 - Closes the browser, after a specified time(for example 60 minutes).
 - Logs in the status, errors that occurred in a file for future reference.
 
@@ -18,27 +18,27 @@ This script started out as a prank project.
 2. `cron` [install here](https://stackoverflow.com/questions/1802337/how-to-install-cron)
 3. `python3`
 4. `pip3`
-5. Make sure that the browser has access to microphone and camera, without manual intervention.
-6. Stable internet connection at the time of lecture.
-7. PC is not sleeping at the time of lecture.
+5. Make sure the browser has access to _microphone_ and _camera_, without manual intervention.
+6. Stable internet connection at the _time of lecture_.
+7. PC is not sleeping at the _time of lecture_.
 
-**Note** Most requirements are present by default, on Linux and MacOS.
+**Note** On Linux and MacOS, most requirements are already present.
 
 #### Installation
-1. Download and extract the zip.
-2. Set the fields in `config.json` - email, password, timetable, class links.
-3. Run `install.py`
+1. Download and extract as zip.
+2. Set fields in [`timetable.json`](https://github.com/dormant-sanjarcode/attend_lecture_bot/blob/master/config/timetable.json) - email, password, timetable, class links.
+3. Run [`install.py`]((https://github.com/dormant-sanjarcode/attend_lecture_bot/blob/master/scripts/install.py))
 4. Check if properly installed using crontab -l: you'll see entries with your email, password.
 
 Installation location: `~/.attend_lecture/`
 
 #### Removal
-1. Run `uninstall.py`
+1. Run [`uninstall.py`](https://github.com/dormant-sanjarcode/attend_lecture_bot/blob/master/scripts/uninstall.py)
 
 Your attendance log is retained. It contains status, error for all lectures.
 
 ## Note
-1. Installing the app multiple times won't clog the crontab, don't worry about it.
+1. Installing the app(bot 😂️) multiple times won't clog the crontab, don't worry about it 🤗️.
 2. Your existing cron jobs will not be affected, even if you add new ones after installation
 3. Keep your PC(bot) on at all times
 4. If timetable changes, change the timetable, run `install.py` again.
