@@ -27,7 +27,7 @@ This as a prank project🤗️.
 #### Installation
 1. Download and extract as zip.
 2. Set fields in [`timetable.json`](https://github.com/dormant-sanjarcode/attend_lecture_bot/blob/master/config/timetable.json) - email, password, timetable, class links.
-3. Run [`install.py`]((https://github.com/dormant-sanjarcode/attend_lecture_bot/blob/master/scripts/install.py))
+3. Run [`install.py`](https://github.com/dormant-sanjarcode/attend_lecture_bot/blob/master/scripts/install.py).
 4. Check if properly installed using crontab -l: you'll see entries with your email, password.
 
 Installation location: `~/.attend_lecture/`
